@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Meal Type">
+
+        <CheckBoxPreference
+            android:title="All"
+            android:key="all_type"
+            android:defaultValue="true"/>
+        <CheckBoxPreference
+            android:title="Lunch"
+            android:key="type_lunch"
+            android:defaultValue="false"/>
+        <CheckBoxPreference
+            android:title="Dinner"
+            android:key="type_dinner"
+            android:defaultValue="false"/>
+        <CheckBoxPreference
+            android:title="Breakfast"
+            android:key="type_breakfast"
+            android:defaultValue="false"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Number of items on Screen">
+
+        <EditTextPreference
+            android:key="no_of_items"
+            android:title="No of items"
+            android:persistent="true"
+            android:defaultValue="10" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Intolerances">
+
+        <CheckBoxPreference
+            android:title="Lactose"
+            android:key="Dairy_Free"
+            android:defaultValue="false"/>
+        <CheckBoxPreference
+            android:title="Gluten"
+            android:key="Gluten"
+            android:defaultValue="false"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
